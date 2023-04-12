@@ -1,52 +1,33 @@
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 560px;
-    height: 560px;
-    border: solid black;
-}
-  
-.grid div {
-    width: 20px;
-    height: 20px;
+body {
+  background-color: black;
 }
 
-.pac-dot {
-    background-color: green;   
-    border: 5px solid white;
-    box-sizing: border-box;
+#pacman {
+  height: 470px;
+  width: 382px;
+  border-radius: 5px;
+  margin: 20px auto;
 }
 
-.wall {
-    background-color: blue;
+#shim {
+  font-family: 'Permanent Marker', cursive;
+  position: absolute;
+  visibility: hidden
 }
 
-.power-pellet {
-    background-color: green;
-    border-radius: 10px;
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: yellow;
 }
 
-.blinky {
-    background-color: red;
+body {
+  width: 342px;
+  margin: 0px auto;
+  font-family: sans-serif;
 }
 
-.pinky {
-    background-color: pink;
-}
-
-.inky {
-    background-color: cyan;
-}
-
-.clyde {
-    background-color: orange;     
-}
-
-.pac-man {
-    background-color: yellow;
-    border-radius: 10px;
-}
-
-.scared-ghost {
-    background-color: aquamarine;
+a {
+  text-decoration: none;
+  color: #0000FF;
 }
