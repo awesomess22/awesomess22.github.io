@@ -1,3 +1,7 @@
+<html>
+<body>
+  <h1>Proxy<h1>
+  
 <?php
 /*
 NOTE: miniProxy IS NO LONGER MAINTAINED AS OF APRIL 26th, 2020.
@@ -600,3 +604,5 @@ if (stripos($contentType, "text/html") !== false) {
   header("Content-Length: " . strlen($responseBody), true);
   echo $responseBody;
 }
+  </body>
+</html>
