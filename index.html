@@ -1,165 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-             <title>The website of awesomeness!</title>
-        <link rel="icon" type="images/x-icon" href="https://github.com/awesomess22/awesomess22.github.io/blob/main/logooooo%20%201%20mb.png?raw=true" />
-    </head>
-    <body>
-        <body style="background-color:black;">
-   
-        
-        <style>
-        
-            h1 {
-            
-               color:rgb(0,256,0);
-                
-            
-            
-            }
-            
-            #lol {
-            
-            color:rgb(256,256,256);
-            
-            }
-            
-            @import 'https://fonts.googleapis.com/css?family=Inconsolata';
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using javascript - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-html {
-  min-height: 100%;
-}
+<div class="container">
+  <div class="calculator">
+    <form>
+      <div class="display">
+        <input type="text" name="display">
+      </div>
+      <div>
+        <input type="button" value="AC" onclick="display.value = '' " class="operator">
+        <input type="button" value="DE" onclick="display.value =  display.value.toString().slice(0,-1)" class="operator">
+        <input type="button" value="." onclick="display.value += '.' " class="operator">
+        <input type="button" value="/" onclick="display.value += '/' " class="operator">
+      </div>
+      <div>
+        <input type="button" value="7" onclick="display.value += '7' ">
+        <input type="button" value="8" onclick="display.value += '8' ">
+        <input type="button" value="9" onclick="display.value += '9' ">
+        <input type="button" value="*" onclick="display.value += '*' " class="operator">
+      </div>
+      <div>
+        <input type="button" value="4" onclick="display.value += '4' ">
+        <input type="button" value="5" onclick="display.value += '5' ">
+        <input type="button" value="6" onclick="display.value += '6' ">
+        <input type="button" value="-" onclick="display.value += '-' " class="operator">
+      </div>
+      <div>
+        <input type="button" value="1" onclick="display.value += '1' ">
+        <input type="button" value="2" onclick="display.value += '2' ">
+        <input type="button" value="3" onclick="display.value += '3' ">
+        <input type="button" value="+" onclick="display.value += '+' " class="operator">
+      </div>
+      <div>
+        <input type="button" value="00" onclick="display.value += '00' ">
+        <input type="button" value="0" onclick="display.value += '0' ">
+        <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
+       
+      </div>
+    </form>
+  </div>
+</div>
 
-body {
-  box-sizing: border-box;
-  height: 100%;
-  background-color: #000000;
-  background-image: radial-gradient(#11581E, #041607);
-  font-family: 'Inconsolata', Helvetica, sans-serif;
-  font-size: 1.25rem;
-  color: rgba(128, 255, 128, 0.8);
-  text-shadow: 0 0 1ex rgba(51, 255, 51, 1), 0 0 2px rgba(255, 255, 255, 0.8);
-}
 
-.overlay {
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
-  background-size: auto 4px;
-  z-index: 99;
-}
-
-.overlay::before {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(0deg, transparent 0%, rgba(32, 128, 32, 0.2) 2%, rgba(32, 128, 32, 0.8) 3%, rgba(32, 128, 32, 0.2) 3%, transparent 100%);
-  background-repeat: no-repeat;
-  animation: scan 7.5s linear 0s infinite;
-}
-
-@keyframes scan {
-  0% { background-position: 0 -100vh; }
-  35%, 100% { background-position: 0 100vh; }
-}
-
-.terminal {
-  box-sizing: inherit;
-  position: absolute;
-  height: 100%;
-  width: 1000px;
-  max-width: 100%;
-  padding: 4rem;
-  text-transform: uppercase;
-}
-
-.output {
-  color: rgba(128, 255, 128, 0.8);
-  text-shadow: 0 0 1ex #3f3, 0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-.output::before {
-  content: "> ";
-}
-
-.input {
-  color: rgba(192, 255, 192, 0.8);
-  text-shadow: 0 0 1ex #3f3, 0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-.input::before {
-  content: "$ ";
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a::before {
-  content: "[";
-}
-
-a::after {
-  content: "]";
-}
-
-.errorcode {
-  color: white;
-}
-
-.copyright {
-  font-size: .7rem;
-}
-   
-        
-        </style>
-        <div class="overlay"></div>
-        <div class="terminal">
-        <br><br>
-        
-        <h1>awesomess22's website!</h1>
-        
-       <script src="https://apis.google.com/js/platform.js"></script>
-
-<div class="g-ytsubscribe" data-channelid="UClm4T3lL7sb0FSg9FBaokDw" data-layout="full" data-theme="dark" data-count="default"></div>
-        
-        
-        
-     <script src="https://apis.google.com/js/platform.js"></script>
-
-<div class="g-ytsubscribe" data-channelid="UCkLMbBk_GVTkfekXeBdDgZg" data-layout="full" data-theme="dark" data-count="default"></div>
-        
-        <p id="lol">
-        
-        Hello, I am awesomess22 and this is my website... Pretty cool <em>right</em>? <br>
-            <strong>It would be nice if you could take a moment to subscribe!</strong> <br><br>
-            <h1>Stuff</h1>
-            <h3>
-                <a href="https://awesomess22.github.io/news">[ awesomess22's news ]</a>
-                <br><br>
-                <a href="https://awesomess22.github.io/QRcodes">[ QR codes to download ]</a>
-                <br>
-                <a href="https://awesomess22.github.io/susamogus">[ Unblocked Stuff ]</a>
-                 <br>
-                <a href="https://awesomess22.github.io/chat">[ Chat ]</a>
-                <br>
-                <a href="https://awesomess22.github.io/myFavSites">[ My favorite sites ]</a>
-                </h3>
-        
-        
-        
-        </p>
-        
-    </body>
+</body>
 </html>
